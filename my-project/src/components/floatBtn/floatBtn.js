@@ -1,10 +1,10 @@
 // import Vue from 'vue';
-import Float from './floatBtn.vue';
+import Float from "./floatBtn.vue";
 let dom;
 const FloatBtn = {}; // 定义插件对象
-FloatBtn.install = function(Vue, options) {
+FloatBtn.install = function(Vue) {
   // vue的install方法，用于定义vue插件
-  if (document.getElementsByClassName('yht-float-btn').length) {
+  if (document.getElementsByClassName("yht-float-btn").length) {
     return;
   }
   let Instance = Vue.extend(Float);
@@ -16,13 +16,13 @@ FloatBtn.install = function(Vue, options) {
     document.body.appendChild(boxEl);
   };
   Vue.prototype.$floatBtn = {
-    showFloat(options) {
+    showFloat() {
       if (!dom) {
         initInstance();
       }
       dom.vm.showBtn = true; // 显示toast
     },
-    hideFloat(options = 0) {
+    hideFloat() {
       if (!dom) {
         initInstance();
       }

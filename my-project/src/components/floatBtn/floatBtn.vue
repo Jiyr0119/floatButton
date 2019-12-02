@@ -25,8 +25,6 @@
 </template>
 
 <script>
-// import Util from "@/utils/common";
-// import router from "../../router";
 export default {
   name: "drag",
   components: {},
@@ -94,11 +92,9 @@ export default {
         if (this.left > this.clientWidth / 2) {
           // 浮动靠右边
           this.left = this.clientWidth - this.itemWidth - this.gapWidth;
-          console.log("这里是右边");
         } else {
           // 靠左边
           this.left = this.gapWidth;
-          console.log("这里是左边");
         }
         if (this.top < 0) {
           // 防止滑到上方被隐藏
@@ -139,17 +135,7 @@ export default {
     handleClickMenu() {
       this.show = !this.show;
     },
-    handleClickItem(type) {
-      if (type === 0) {
-        router.push({ path: "/question/question" });
-      } else {
-        if (window.sessionStorage.getItem("isMiniEnvironment") !== "0") {
-          Util.toMiniIndex();
-        } else {
-          router.replace({ path: "/yht/index" });
-        }
-      }
-    }
+    handleClickItem() {}
   }
 };
 </script>
