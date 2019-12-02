@@ -30,50 +30,38 @@ export default {
       list: [
         {
           pictlt: [
-            "https://testyht.cn/clinetfile/file/20191126/pipe_20191126111148701000001567897484.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191126/pipe_20191126111148701000000407761383.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191126/pipe_20191126111149701000001686016286.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191126/pipe_20191126111150701000000055109104.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191126/pipe_20191126111200701000001735073502.jpg"
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/27fb7f097ca218d743f816836bc7ea4a",
+            "http://manhattan.didistatic.com/static/manhattan/insurancePlatform_spu/uploads/c2912793a222eb24b606a582fd849ab7",
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/6ee5a0ba9340ca452cbc827902e76be0",
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/d751dd4487e265de3b8587f504eee2c3"
           ]
         },
         {
           pictlt: [
-            "https://testyht.cn/clinetfile/file/20191126/pipe_20191126111055701000000352264193.jpg"
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/27fb7f097ca218d743f816836bc7ea4a"
           ]
         },
         {
           pictlt: [
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141639701000001507224723.jpg",
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141640701000001723354969.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141640701000001502382389.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141640701000001447128436.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141641701000001436615817.jpg"
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/27fb7f097ca218d743f816836bc7ea4a",
+            "http://manhattan.didistatic.com/static/manhattan/insurancePlatform_spu/uploads/c2912793a222eb24b606a582fd849ab7",
+            "http://manhattan.didistatic.com/static/manhattan/insurancePlatform_spu/uploads/c2912793a222eb24b606a582fd849ab7",
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/6ee5a0ba9340ca452cbc827902e76be0",
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/d751dd4487e265de3b8587f504eee2c3"
           ]
         },
         {
           pictlt: [
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141257701000001736238511.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141315701000001438908755.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141315701000001376575068.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141315701000000793360296.jpg",
-
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141316701000001733266427.jpg"
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/27fb7f097ca218d743f816836bc7ea4a",
+            "http://manhattan.didistatic.com/static/manhattan/insurancePlatform_spu/uploads/c2912793a222eb24b606a582fd849ab7",
+            "http://manhattan.didistatic.com/static/manhattan/insurancePlatform_spu/uploads/c2912793a222eb24b606a582fd849ab7",
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/6ee5a0ba9340ca452cbc827902e76be0",
+            "http://img-hxy021.didistatic.com/static/strategymis/insurancePlatform_spu/uploads/d751dd4487e265de3b8587f504eee2c3"
           ]
         },
         {
           pictlt: [
-            "https://testyht.cn/clinetfile/file/20191122/pipe_20191122141202701000001798810491.jpg"
+            "http://manhattan.didistatic.com/static/manhattan/insurancePlatform_spu/uploads/c2912793a222eb24b606a582fd849ab7"
           ]
         }
       ]
@@ -84,6 +72,7 @@ export default {
   },
   methods: {
     handleImg(pIndex, index) {
+      this.imgs = [];
       this.imgs = this.list[pIndex].pictlt;
       this.viewerIndex = index;
       this.isViewerShow = true;
